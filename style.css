@@ -5,7 +5,8 @@
   --acc:#ff2222; --acc2:#7a0e0e; --blood:#b30000; --tg:#229ED9;
 }
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;overflow-x:hidden;min-height:100vh}
+body{background:var(--bg) url('bg.jpg') no-repeat center top fixed;background-size:cover;color:var(--txt);font-family:'Inter',system-ui,sans-serif;overflow-x:hidden;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,3,4,.8),rgba(8,3,4,.9));pointer-events:none}
 #stars{position:fixed;inset:0;z-index:0;opacity:.7}
 .glow{position:fixed;border-radius:50%;filter:blur(120px);z-index:0;pointer-events:none;opacity:.4}
 .glow-1{width:520px;height:520px;background:#7f1d1d;top:-160px;left:-140px}
@@ -144,6 +145,7 @@ footer{border-top:1px solid var(--line);margin-top:30px;background:#050202cc}
   .hero-right{display:flex;flex-direction:column}
 }
 @media(max-width:480px){
+  body{background-attachment:scroll}
   .clickgui{grid-template-columns:1fr}
   .hero-btns .btn{width:100%}
   .tg-rect h3{font-size:17px}
