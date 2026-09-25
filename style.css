@@ -5,7 +5,7 @@
   --acc:#ff2222; --acc2:#7a0e0e; --blood:#b30000; --tg:#229ED9;
 }
 html{scroll-behavior:smooth}
-body{background:var(--bg) url('bg.jpg') no-repeat center top fixed;background-size:cover;color:var(--txt);font-family:'Inter',system-ui,sans-serif;overflow-x:hidden;min-height:100vh}
+body{background:var(--bg) url('bg.jpg') no-repeat center top fixed;background-size:cover;color:var(--txt);font-family:'Press Start 2P',monospace;overflow-x:hidden;min-height:100vh}
 body::before{content:'';position:fixed;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,3,4,.8),rgba(8,3,4,.9));pointer-events:none}
 #stars{position:fixed;inset:0;z-index:0;opacity:.7}
 .glow{position:fixed;border-radius:50%;filter:blur(120px);z-index:0;pointer-events:none;opacity:.4}
@@ -16,7 +16,7 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:linear-gradi
 /* NAV */
 .nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:#080304d9;border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{text-decoration:none;color:#fff;display:flex;align-items:center;gap:10px;font-family:'Unbounded',sans-serif;font-weight:800;letter-spacing:.5px}
+.logo{text-decoration:none;color:#fff;display:flex;align-items:center;gap:10px;font-family:'Press Start 2P',monospace;font-weight:800;letter-spacing:.5px}
 .logo-img{width:42px;height:42px;object-fit:contain;border-radius:10px;background:#000;border:1px solid var(--line);filter:drop-shadow(0 0 12px #ff222255)}
 .logo-text{font-size:15px}.logo-text em{font-style:normal;background:linear-gradient(90deg,var(--acc),#ff7a7a);-webkit-background-clip:text;background-clip:text;color:transparent}
 .links{display:flex;gap:26px}
@@ -39,13 +39,13 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:linear-gradi
 .pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#ff6b6b;border:1px solid #ff222233;background:#ff22220d;padding:8px 14px;border-radius:99px;font-weight:600}
 .dot{width:8px;height:8px;border-radius:50%;background:#ff2222;box-shadow:0 0 10px #ff2222;animation:blink 1.6s infinite}
 @keyframes blink{50%{opacity:.3}}
-h1{font-family:'Unbounded',sans-serif;font-size:clamp(44px,7vw,84px);line-height:.95;margin:20px 0;font-weight:800}
+h1{font-family:'Press Start 2P',monospace;font-size:clamp(44px,7vw,84px);line-height:.95;margin:20px 0;font-weight:800}
 .grad{background:linear-gradient(90deg,#ff2222,#ff6b6b,#7a0e0e);-webkit-background-clip:text;background-clip:text;color:transparent}
 .subtitle{color:var(--mut);font-size:17px;line-height:1.6;max-width:480px}
 .hero-btns{display:flex;gap:14px;margin:26px 0;flex-wrap:wrap}
 .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:10px}
 .stats div{display:flex;flex-direction:column}
-.stats b{font-size:24px;font-family:'Unbounded'}.stats span{color:var(--mut);font-size:13px}
+.stats b{font-size:24px;font-family:'Press Start 2P',monospace}.stats span{color:var(--mut);font-size:13px}
 
 /* Client window */
 .hero-right{position:relative}
@@ -72,7 +72,7 @@ h1{font-family:'Unbounded',sans-serif;font-size:clamp(44px,7vw,84px);line-height
 
 /* SECTIONS */
 .section{padding:60px 20px}
-.sec-title{font-family:'Unbounded';font-size:clamp(26px,4vw,42px);text-align:center}
+.sec-title{font-family:'Press Start 2P',monospace;font-size:clamp(26px,4vw,42px);text-align:center}
 .sec-sub{text-align:center;color:var(--mut);margin:12px 0 36px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;backdrop-filter:blur(14px);transition:.3s;position:relative;overflow:hidden}
@@ -97,14 +97,14 @@ h1{font-family:'Unbounded',sans-serif;font-size:clamp(44px,7vw,84px);line-height
 .tg-left{display:flex;align-items:center;gap:20px}
 .tg-icon{width:72px;height:72px;min-width:72px;border-radius:20px;background:linear-gradient(135deg,#37AEE2,#1E96C8);display:grid;place-items:center;box-shadow:0 10px 30px #00000055}
 .tg-icon svg{width:36px;height:36px;color:#fff}
-.tg-rect h3{font-size:22px;font-family:'Unbounded';margin-bottom:6px}
+.tg-rect h3{font-size:22px;font-family:'Press Start 2P',monospace;margin-bottom:6px}
 .tg-rect p{color:#e8b4b4;font-size:14px}
 .tg-btn{background:#fff;color:#5a0a0a;font-weight:800;padding:14px 28px;border-radius:14px;white-space:nowrap}
 
 /* DOWNLOAD */
 .dl-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
 .dl-card,.req-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:32px;backdrop-filter:blur(14px)}
-.dl-card h3{font-family:'Unbounded';font-size:20px;margin-bottom:18px}
+.dl-card h3{font-family:'Press Start 2P',monospace;font-size:20px;margin-bottom:18px}
 .dl-card ul{list-style:none;margin-bottom:22px}
 .dl-card li{padding:9px 0;color:#e6c9c9;font-size:15px;border-bottom:1px dashed #ff222a22}
 .dl-note{color:var(--mut);font-size:13px;margin-top:12px}
@@ -138,7 +138,7 @@ footer{border-top:1px solid var(--line);margin-top:30px;background:#050202cc}
 .tile:hover{transform:translateY(-6px);border-color:#ff222255;box-shadow:0 20px 50px #00000088}
 .tile:hover::before{opacity:1}
 .tile svg{width:40px;height:40px;color:var(--acc);margin-bottom:16px}
-.tile h3{font-family:'Unbounded';font-size:20px;margin-bottom:8px}
+.tile h3{font-family:'Press Start 2P',monospace;font-size:20px;margin-bottom:8px}
 .tile p{color:var(--mut);font-size:14px;line-height:1.6;margin-bottom:16px}
 .tile .go{font-size:13px;font-weight:700;color:#ff6b6b}
 
@@ -166,4 +166,48 @@ footer{border-top:1px solid var(--line);margin-top:30px;background:#050202cc}
   .hero-btns .btn{width:100%}
   .tg-rect h3{font-size:17px}
   .steps{flex-direction:column}
+}
+
+/* Mojang-style pixel font: пиксельник шире обычного, поэтому размеры меньше, а межстрочка больше */
+body{font-size:11px;line-height:2}
+.logo-text{font-size:10px;line-height:1.6}
+.links a{font-size:10px}
+.ver-badge{font-size:8px}
+.btn{font-size:11px;line-height:1.7}
+.btn-small{font-size:9px}
+.pill{font-size:9px;line-height:1.7}
+h1{font-size:clamp(26px,5vw,48px);line-height:1.3}
+.subtitle{font-size:11px;line-height:2}
+.stats b{font-size:15px}
+.stats span{font-size:9px}
+.win-bar{font-size:9px}
+.gui-col h4{font-size:10px}
+.gui-col label{font-size:9px}
+.hud-line{font-size:8px}
+.float-card{font-size:10px;line-height:1.7}
+.sec-title{font-size:clamp(16px,3vw,26px);line-height:1.5}
+.sec-sub{font-size:10px}
+.card h3{font-size:13px;line-height:1.7}
+.card p{font-size:10px;line-height:1.9}
+.tag{font-size:9px}
+.gui-tags span{font-size:10px}
+.tg-rect h3{font-size:14px;line-height:1.7}
+.tg-rect p{font-size:10px;line-height:1.9}
+.tg-btn{font-size:11px}
+.dl-card h3{font-size:13px;line-height:1.7}
+.dl-card li{font-size:10px;line-height:1.9}
+.dl-note{font-size:9px}
+.steps b{font-size:11px}
+.steps span{font-size:9px;line-height:1.8}
+.req-card h4{font-size:12px}
+table{font-size:10px}
+details summary{font-size:11px}
+details p{font-size:10px;line-height:1.9}
+.tile h3{font-size:14px;line-height:1.6}
+.tile p{font-size:10px;line-height:1.9}
+.tile .go{font-size:10px}
+.crumbs{font-size:10px}
+.foot{font-size:9px}
+@media(max-width:480px){
+  .tg-rect h3{font-size:12px}
 }
